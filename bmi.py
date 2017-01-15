@@ -44,3 +44,21 @@ else:
         odp = 'Otyłość'
 
 print("Twoje BMI wynosi: " + str(bmi) + " jest to: " + odp)
+##################
+on = True
+while on:
+    masa = float(input('Podaj swoją wagę'))
+    wzrost = float(input('Podaj swój wzrost w formie np 1.88'))
+    bmi = masa//(wzrost**2)
+    if bmi < 20:
+        odp =" Posiadasz niedowagę"
+    elif bmi <= 25:
+        odp = " Twoja waga jest w normie"
+    else:
+        odp = " Masz nadwagę"
+    print("Twoje BMI wynosi: " + str(bmi) + odp)
+    pytanie = input('Czy policzyć jeszcze raz  T/N')
+    if pytanie == 'N':
+        on = False
+
+

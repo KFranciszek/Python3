@@ -1,4 +1,4 @@
-#
+#http://www.practicepython.org
 #My solution
 
 ask = int(input('Give a number'))

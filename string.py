@@ -8,4 +8,6 @@ about = "Lubię gotować i chodzić po lesie ponieważ jestem szalony"
 print (about)
 print (about[0:42])
 print (len(about))
-#
+####
+p = 5*('Napis'+ "\n")
+print(p)

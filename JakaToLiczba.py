@@ -18,5 +18,18 @@ while licznik:
         print("Źle prawidłowa licza to:" + str(liczba))
         break
 #########################################
-
+licznik = True
+while licznik:
+    import random
+    liczba = random.randint(1,100)
+    print ("Zgadnij liczbę w przedziała 1-100")
+    odp = input("Wylosowana liczba to: ")
+    licznik += 1
+    if odp == liczba:
+        print("Prawidłowa odpoiedź, liczba wylosowana to " + liczba)
+    elif odp != liczba:
+        print("Źle prawidłowa licza to:" + str(liczba))
+    if licznik  >= 4:
+        print('KONIE, straciłeś wszystkie próby')
+        break
 

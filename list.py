@@ -15,6 +15,9 @@ magazyn += plecak
 print(magazyn)
 del magazyn [1]
 print(magazyn)
+print(magazyn.index('tarcza'))
+print(magazyn.count('miecz'))
+
 
 ###############################################
 list1 = ['Kasia', 'Jadzia', 'Król']

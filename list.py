@@ -2,11 +2,19 @@ magazyn = ['miecz', 'zbroja', 'topór', 'tarcza']
 print(magazyn)
 for i in magazyn:
     print(i, end =" ,")
+print(len(magazyn))
 if len(magazyn) < 5:
-print("Brakuje Ci konia")
-
-
-
+    print("Brakuje Ci konia")
+    p=input("Co dodać")
+    magazyn.append(p)
+    print("Posiadasz teraz", magazyn)
+    if len(magazyn) >= 5:
+        print("Jesteś gotów na wojnę")
+plecak = ['zioła','mikstury']
+magazyn += plecak
+print(magazyn)
+del magazyn [1]
+print(magazyn)
 
 ###############################################
 list1 = ['Kasia', 'Jadzia', 'Król']

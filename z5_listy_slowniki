@@ -1,0 +1,6 @@
+#loswa lista 
+
+import random
+a =['kot', 'pies', 'agata', 'jagoda', 'mama']
+b=random.sample(a, k=len(a))
+print(b)

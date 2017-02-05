@@ -1,4 +1,3 @@
-
 punkty = 30
 print("Witaj w grze Magiczni wojownicy, możesz przyznać sumę 30 punktów na cechy takie jak siła, zdrowie, mądrość i zręczność")
 
@@ -39,14 +38,15 @@ zostało =  punkty - sumaPTK
 cechy = {'Siła':siła, 'Zdrowie': zdrowie, "Mądrość":mądrość, "Zręczność":zręcznosć}
 kontynowac = "Czy chcesz rozdać pozostałe punkty"
 
+
+
 if sumaPTK == punkty:
-    print(cechy, end=" ")
+    print("Lista twoich cech wgląda natępująco ", cechy, end=" ")
     print("Pozostało Ci 0 punktów")
-elif sumaPTK < punkty:
-    print(cechy)
+elif sumaPTK != punkty:
     print("Pozstało Ci", zostało, " punktów")
     print(kontynowac)
-  
+
 
 
 

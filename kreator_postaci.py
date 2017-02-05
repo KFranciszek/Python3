@@ -39,4 +39,14 @@ zostało =  punkty - sumaPTK
 cechy = {'Siła':siła, 'Zdrowie': zdrowie, "Mądrość":mądrość, "Zręczność":zręcznosć}
 kontynowac = "Czy chcesz rozdać pozostałe punkty"
 
+if sumaPTK == punkty:
+    print(cechy, end=" ")
+    print("Pozostało Ci 0 punktów")
+elif sumaPTK < punkty:
+    print(cechy)
+    print("Pozstało Ci", zostało, " punktów")
+    print(kontynowac)
+  
+
+
 

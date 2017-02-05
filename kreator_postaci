@@ -5,3 +5,4 @@ zdrowie = input("ile chce przekazać punktów na zdrowie")
 mądrość = input("ile chce przekazać punktów na mądrość")
 zręcznosć = input("ile chce przekazać punktów na zręczność")
 cechy = {'Siła':siła, 'Zdrowie': zdrowie, "Mądrość":mądrość, "Zręczność":zręcznosć}
+###

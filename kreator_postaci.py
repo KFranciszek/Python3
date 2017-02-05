@@ -1,43 +1,42 @@
 
 punkty = 30
-siła = input("ile chce przekazać punktów na siłę")
-zdrowie = input("ile chce przekazać punktów na zdrowie")
-mądrość = input("ile chce przekazać punktów na mądrość")
-zręcznosć = input("ile chce przekazać punktów na zręczność")
-cechy = {'Siła':siła, 'Zdrowie': zdrowie, "Mądrość":mądrość, "Zręczność":zręcznosć}
-###
-punkty = 30
 print("Witaj w grze Magiczni wojownicy, możesz przyznać sumę 30 punktów na cechy takie jak siła, zdrowie, mądrość i zręczność")
+
+
 siła = int(input("ile chce przekazać punktów na siłę"))
-if siła > 30:
+if siła > punkty:
     print("Nie możesz przyznać więcej niż 30 punktów")
-   
+elif siła < punkty:
+    print("Pozostał Ci", punkty-siła)
+    After_siła=punkty -siła
+
 
 zdrowie = int(input("ile chce przekazać punktów na zdrowie"))
-if zdrowie > 30:
+if zdrowie > punkty:
     print("Nie możesz przyznać więcej niż 30 punktów")
+elif zdrowie < punkty:
+    print("Pozostał Ci", After_siła-zdrowie)
+    After_zdrowie = After_siła - zdrowie
+
 
 mądrość = int(input("ile chce przekazać punktów na mądrość"))
-if mądrość > 30:
+if mądrość > punkty:
     print("Nie możesz przyznać więcej niż 30 punktów")
+elif mądrość < punkty:
+    print("Pozostał Ci", After_zdrowie-mądrość)
+    After_mądrość = After_zdrowie - mądrość
+
 
 zręcznosć = int(input("ile chce przekazać punktów na zręczność"))
-if siła > 30:
+if zręcznosć > punkty:
     print("Nie możesz przyznać więcej niż 30 punktów")
+elif zręcznosć < punkty:
+    print("Pozostał Ci", After_mądrość- zręcznosć)
+    After_zręcznosć= After_zdrowie - zręcznosć
 
 sumaPTK = siła + zdrowie + mądrość + zręcznosć
 zostało =  punkty - sumaPTK
 cechy = {'Siła':siła, 'Zdrowie': zdrowie, "Mądrość":mądrość, "Zręczność":zręcznosć}
 kontynowac = "Czy chcesz rozdać pozostałe punkty"
-if siła > 30:
-    print("Nie możesz przyznać więcej niż 30 punktów")
-
-if sumaPTK == punkty:
-    print(cechy)
-    print("Pozostało Ci 0 punktów")
-elif sumaPTK < punkty:
-    print(cechy)
-    print("Pozstało Ci", zostało, " punktów")
-    print(kontynowac)
 
 

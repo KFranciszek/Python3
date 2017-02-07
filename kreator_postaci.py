@@ -1,3 +1,5 @@
+#Do poprawy jeszcze!!!
+
 punkty = 30
 print("Witaj w grze Magiczni wojownicy, możesz przyznać sumę 30 punktów na cechy takie jak siła, zdrowie, mądrość i zręczność")
 

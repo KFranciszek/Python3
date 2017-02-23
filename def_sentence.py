@@ -12,3 +12,8 @@ def big(split_title):
         if len(i) < 3:
             bigt[element] = bigt[element].lower()
     print(bigt)
+
+    
+ask = word()
+split_title = split_word(ask)
+big(split_title)

@@ -1,0 +1,7 @@
+def wzor ():
+    wysokosc =int(input("podaj wysokosc"))
+    bok_1= int(input("Podaj długość boku 1"))
+    bok_2 = int(input("Podaj długość boku 2"))
+    pros = wysokosc*bok_1*bok_2
+    print("Objętość figury wynosi ", pros)
+wzor()

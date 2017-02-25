@@ -30,3 +30,23 @@ print(list1)
 list1.remove("Król")
 print(list1)
 ################################################
+lista =[1,2,"mama", "kot"]
+lista.append('działo')
+print(lista)
+lista.remove(1)
+print(lista)
+print(lista[3:4])
+lista.insert(6,"Kinga")
+print(lista)
+print(len(lista))
+del lista[0:3]
+print(lista)
+lista[0:2]=['Ja', "Jagoda"]
+print(lista)
+print(len(lista))
+########
+tupla = ("Mama", "kot")
+print(tupla)
+print(len(tupla))
+lista.append(tupla)
+print(lista)

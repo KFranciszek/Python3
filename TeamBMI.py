@@ -7,6 +7,7 @@ def DicBMI_data():
         height = float(input('Podaj swój wzrost'));
         bmi = weight//(2*height)
         bmiDic = {'name': name, 'bmi': bmi}
+
         team.append(bmiDic)
         pytanie = input('Czy policzyć jeszcze raz  T/N')
         if pytanie == 'N':
@@ -14,5 +15,9 @@ def DicBMI_data():
             return team
 
 
+def BMI_print ():
+    print(team)
+
 
 DicBMI_data()
+BMI_print()

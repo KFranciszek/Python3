@@ -1,4 +1,5 @@
 wynik=[]
+count = 6
 while count:
     import random
     lotto =random.randint(1,49)

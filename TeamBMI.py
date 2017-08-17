@@ -28,6 +28,12 @@ def writeBMI (team):
         w.write(str(team)+'\n')
         w.close()
 
+# def writeBMI (team):
+#         w=open("BMI_TEAM.txt", 'w')
+#         for i in team:
+#             w.write(str(i) + '\n')
+#         w.close()
+        
 
 
 DicBMI_data()

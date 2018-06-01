@@ -21,3 +21,14 @@ for i in s:
     if i in s and s.count(i) >1:
         u.append(i)
 print(True)
+
+
+# Example 3
+w="Ala ma kota, i kot ma ale"
+s=w.split()
+w = len(s)
+# print(w)
+for i in s:
+    if s.count(i) > 1:
+        print('Słowo uniklane to:', i,'występuje aż', s.count(i), 'razy')
+        break

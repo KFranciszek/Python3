@@ -46,3 +46,16 @@ for i in s:
     if s.count(i) > 1:
        e= 'Słowo uniklane to:', i,'występuje aż', s.count(i), 'razy'
        print(e)
+
+        
+#  Example 5       
+from collections import  Counter
+
+w="Ala ma kota, i kot ma ale. Ala ma psa także"
+w=w.replace(',','')
+w=w.replace('.', '')
+li=w.lower().split()
+
+c=Counter(li).most_common(2)
+for i in [c]:
+    print('W podanym zdaniu występuje fraza/razy', i)

@@ -69,6 +69,7 @@ for i in s:
 
         
 #  Example 5       
+    
 from collections import  Counter
 
 w="Ala ma kota, i kot ma ale. Ala ma psa także"
@@ -77,5 +78,8 @@ w=w.replace('.', '')
 li=w.lower().split()
 
 c=Counter(li).most_common(2)
-for i in [c]:
-    print('W podanym zdaniu występuje fraza/razy', i)
+for i in c:
+    p='W podanym zdaniu występuje fraza/razy', i
+    print(p)
+    
+

@@ -16,15 +16,16 @@ for i, count in c.most_common(2):
 
 # Example 1
 w="Ala ma kota, i kot ma ale"
-s=w.split()
+w = w.replace(',', '')
+w = w.replace('.', '')
+s=w.lower().split()
 w = len(s)
 # print(w)
 for i in s:
     if s.count(i) > 1:
-        print(i,'true')
+        print('Wyraz', i, 'występuje więcej niż 1 raz?:', 'true')
     else:
-        print(i,'False')
-
+        print('Wyraz', i, 'występuje więcej niż 1 raz?:', 'false')
 
 
 # Example  2

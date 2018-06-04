@@ -30,15 +30,15 @@ for i in s:
 
 # Example  2
 w="Ala ma kota, i kot ma ale"
-s=w.split()
+w = w.replace(',', '')
+w = w.replace('.', '')
+s=w.lower().split()
 w = len(s)
 u=[]
 # print(w)
 for i in s:
     if i in s and s.count(i) >1:
-        u.append(i)
-print(True)
-
+        u.append(i),print(True)
 
 # Example 3
 w="Ala ma kota, i kot ma ale"

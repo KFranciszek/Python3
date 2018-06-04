@@ -39,7 +39,9 @@ u=[]
 for i in s:
     if i in s and s.count(i) >1:
         u.append(i),print(True)
-
+        
+        
+#  Example 3
 w="Ala ma kota, i kot ma ale ma, kot kot kot"
 w = w.replace(',', '')
 w = w.replace('.', '')
@@ -48,9 +50,8 @@ w = len(s)
 # print(w)
 for i in s:
     if s.count(i) > 1:
-        p=i, s.count(i)
-print('Frazy które występują najczęciej  nazwa/ilość:')
-print(p)
+        i, s.count(i)
+print('Frazy które występują najczęciej  nazwa/ilość:', i, s.count(i))
 
         
 #  Example 4

@@ -1,3 +1,20 @@
+
+# Example 0
+from collections import  Counter
+
+w = "Ala ma kota, i kot ma ale. Ala ma psa także"
+w = w.replace(',', '')
+w = w.replace('.', '')
+li = w.lower().split()
+
+c = Counter(li)
+x = c.most_common(3)
+print('Frazy które występują najczęciej  nazwa/ilość:' )
+for i, count in c.most_common(2):
+    print(i,':', count)
+
+
+
 # Example 1
 w="Ala ma kota, i kot ma ale"
 s=w.split()

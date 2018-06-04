@@ -40,15 +40,17 @@ for i in s:
     if i in s and s.count(i) >1:
         u.append(i),print(True)
 
-# Example 3
-w="Ala ma kota, i kot ma ale"
-s=w.split()
+w="Ala ma kota, i kot ma ale ma, kot kot kot"
+w = w.replace(',', '')
+w = w.replace('.', '')
+s=w.lower().split()
 w = len(s)
 # print(w)
 for i in s:
     if s.count(i) > 1:
-        print('Słowo uniklane to:', i,'występuje aż', s.count(i), 'razy')
-        break
+        p=i, s.count(i)
+print('Frazy które występują najczęciej  nazwa/ilość:')
+print(p)
 
         
 #  Example 4
